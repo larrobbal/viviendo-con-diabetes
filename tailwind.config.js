@@ -6,8 +6,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      montserrat: ['Montserrat'],
-      roboto: ['Roboto'],
+      SourceSansPro: ['Source Sans Pro']
     },
     extend: {
       colors: 
@@ -17,7 +16,7 @@ module.exports = {
       },
       backgroundImage:
       {
-        headerbg: "url('./public/assets/img/portfolio/wpp_main.webp')"
+        headerbg: "url('../assets/images/portfolio/wpp_main.webp')"
       }
     },
   },
