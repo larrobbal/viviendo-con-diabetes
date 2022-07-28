@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <noscript><link rel="stylesheet" href="css/main.css"></noscript>
-    <link rel="stylesheet" href="css/material-design/materialdesignicons.css">
+    <link media="all" rel="stylesheet" type="text/css" href="css/material-design/materialdesignicons.min.css">
 </head>
 <body class="font-SourceSansPro">
     <nav class="bg-gray-100 sticky top-0 z-50 py-1" id="mainNav">
@@ -55,44 +55,117 @@
           </div>
         </div>
       </nav>
-      <section id="home-page" class="bg-headerbg bg-cover">
+      <section id="home-page" class="bg-headerbg bg-center bg-cover md:bg-cover">
         <div class="md:h-screen md:py-60 grid justify-items-center">
           <div class="h-full w-full max-w-screen-xl">
-            <div class="md:w-1/2">
-              <div class="font-semibold text-2xl text-colormain mb-5">Aprenda cómo vivir con diabetes y controlar su salud con la información y los recursos adecuados.</div>
-              <div class="font-black text-5xl">Vivir con diabetes puede ser un desafío, pero no está solo.</div>
-              <div class="font-light text-xl mt-5">Le damos consejos prácticos y sensatos, para ayudarle a sobrellevar su condición. Estar mejor informado sobre las últimas investigaciones y tratamientos para la diabetes.</div>
-              <div class="my-7"><a class="bg-colormain transition duration-150 hover:bg-coloralt text-white text-3xl font-bold py-3 px-5 rounded-lg uppercase" href="#">Saber más</a></div>
+            <div class="p-5 md:w-1/2">
+              <div class="font-semibold text-xl md:text-2xl text-colormain mb-5">Aprenda cómo vivir con diabetes y controlar su salud con la información y los recursos adecuados.</div>
+              <div class="font-black text-4xl md:text-5xl">Vivir con diabetes puede ser un desafío, pero no está solo.</div>
+              <div class="font-light text-lg md:text-xl mt-5">Le damos consejos prácticos y sensatos, para ayudarle a sobrellevar su condición. Estar mejor informado sobre las últimas investigaciones y tratamientos para la diabetes.</div>
+              <div class="flex my-7 justify-center md:justify-start"><a class="bg-colormain transition duration-150 hover:bg-coloralt text-white text-3xl font-bold py-3 px-5 rounded-lg uppercase" href="#">Saber más</a></div>
             </div>
           </div>
         </div>
       </section>
       <section id="aboutUs">
-        <div class="md:h-screen md:py-40 grid justify-items-center bg-gray-50">
-          <div class="grid justify-items-center md:py-20 bg-white w-full max-w-screen-2xl">
-            <div class="flex h-full w-full max-w-screen-xl">
+        <div class="md:py-40 grid justify-items-center bg-gray-50">
+          <div class="md:grid justify-items-center my-10 md:py-20 md:bg-white w-full max-w-screen-2xl">
+            <div class="md:flex h-full w-full max-w-screen-xl">
               <div class="md:w-1/2 flex items-center">
                 <img src="assets/images/portfolio/aboutUs_image_nurse.webp">
               </div>
               <div class="md:w-1/2 p-5">
-                <div class="text-colormain font-bold text-5xl my-5">¿Quiénes somos?</div>
-                <div class="font-semibold text-3xl my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                <div class="text-lg my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nunc, tempus et dolor quis, ullamcorper iaculis libero. Vestibulum maximus convallis tortor. Quisque scelerisque sodales sem in malesuada. Ut quis.</div>
-                <div class="italic font-light text-lg px-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nunc, tempus et dolor quis, ullamcorper iaculis libero."</div>
-                <div class="text-colormain font-semibold text-xl px-5">- Lorem ipsum</div>
+                <div class="text-colormain font-bold text-4xl md:text-5xl my-5">¿Quiénes somos?</div>
+                <div class="font-semibold text-2xl md:text-3xl my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="text-md md:text-lg my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nunc, tempus et dolor quis, ullamcorper iaculis libero. Vestibulum maximus convallis tortor. Quisque scelerisque sodales sem in malesuada. Ut quis.</div>
+                <div class="italic font-light text-md md:text-lg px-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nunc, tempus et dolor quis, ullamcorper iaculis libero."</div>
+                <div class="text-colormain font-semibold text-lg md:text-xl px-5">- Lorem ipsum</div>
               </div>
             </div>
           </div>
-          <div class="h-full w-full max-w-screen-xl my-20">
-            <div class="text-colormain w-full font-bold text-5xl text-center my-3">Nuestra meta</div>
-            <div class="grid justify-items-center w-full"><div class="text-2xl font-semibold w-3/4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nunc, tempus et dolor quis, ullamcorper iaculis libero. Vestibulum maximus convallis tortor. Quisque scelerisque sodales sem in malesuada. Ut quis.</div></div>
-            <div class="grid grid-rows-1 grid-cols-4 justify-items-center w-full my-10">
-              <div class="bg-colormain">a</div>
-              <div class="bg-colormain">a</div>
-              <div class="bg-colormain">a</div>
-              <div class="bg-colormain">a</div>
+          <div class="h-full w-full max-w-screen-2xl md:my-20 p-5">
+            <div class="text-colormain w-full font-bold text-5xl md:text-center my-3">Nuestro equipo</div>
+            <div class="grid justify-items-center w-full"><div class="text-xl md:text-2xl font-semibold md:w-3/4 md:text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ex nunc, tempus et dolor quis, ullamcorper iaculis libero. Vestibulum maximus convallis tortor. Quisque scelerisque sodales sem in malesuada. Ut quis.</div></div>
+            <div class="grid md:grid-rows-2 md:grid-cols-3 justify-items-center w-full my-10">
+              <div class="py-8 px-8 md:h-80 grid grid-rows-1 grid-cols-2 justify-items-center">
+                <div class="text-center mr-5">
+                  <img src="assets/images/portfolio/team/nahomi_mendoza.webp">
+                </div>
+                <div class="grid align-middle">
+                  <div class="block max-h-fit">
+                    <div class="font-semibold text-xl h-fit">Brenda Nahomi Mendoza Artigas</div>
+                    <div class="text-md italic font-light h-fit">Licenciatura en enfermería y obstetricia, ENEO-UNAM</div>
+                    <div class="text-md font-semibold h-fit">23 años</div>
+                  </div>
+                </div>
+              </div>
+              <div class="py-8 px-8 md:h-80 grid grid-rows-1 grid-cols-2 justify-items-center">
+                <div class="text-center mr-5">
+                  <img src="assets/images/portfolio/team/nahomi_mendoza.webp">
+                </div>
+                <div class="grid align-middle">
+                  <div class="block max-h-fit">
+                    <div class="font-semibold text-xl h-fit">Brenda Nahomi Mendoza Artigas</div>
+                    <div class="text-md italic font-light h-fit">Licenciatura en enfermería y obstetricia, ENEO-UNAM</div>
+                    <div class="text-md font-semibold h-fit">23 años</div>
+                  </div>
+                </div>
+              </div>
+              <div class="py-8 px-8 md:h-80 grid grid-rows-1 grid-cols-2 justify-items-center">
+                <div class="text-center mr-5">
+                  <img src="assets/images/portfolio/team/nahomi_mendoza.webp">
+                </div>
+                <div class="grid align-middle">
+                  <div class="block max-h-fit">
+                    <div class="font-semibold text-xl h-fit">Brenda Nahomi Mendoza Artigas</div>
+                    <div class="text-md italic font-light h-fit">Licenciatura en enfermería y obstetricia, ENEO-UNAM</div>
+                    <div class="text-md font-semibold h-fit">23 años</div>
+                  </div>
+                </div>
+              </div>
+              <div class="py-8 px-8 md:h-80 grid grid-rows-1 grid-cols-2 justify-items-center">
+                <div class="text-center mr-5">
+                  <img src="assets/images/portfolio/team/nahomi_mendoza.webp">
+                </div>
+                <div class="grid align-middle">
+                  <div class="block max-h-fit">
+                    <div class="font-semibold text-xl h-fit">Brenda Nahomi Mendoza Artigas</div>
+                    <div class="text-md italic font-light h-fit">Licenciatura en enfermería y obstetricia, ENEO-UNAM</div>
+                    <div class="text-md font-semibold h-fit">23 años</div>
+                  </div>
+                </div>
+              </div>
+              <div class="py-8 px-8 md:h-80 grid grid-rows-1 grid-cols-2 justify-items-center">
+                <div class="text-center mr-5">
+                  <img src="assets/images/portfolio/team/nahomi_mendoza.webp">
+                </div>
+                <div class="grid align-middle">
+                  <div class="block max-h-fit">
+                    <div class="font-semibold text-xl h-fit">Brenda Nahomi Mendoza Artigas</div>
+                    <div class="text-md italic font-light h-fit">Licenciatura en enfermería y obstetricia, ENEO-UNAM</div>
+                    <div class="text-md font-semibold h-fit">23 años</div>
+                  </div>
+                </div>
+              </div>
+              <div class="py-8 px-8 md:h-80 grid grid-rows-1 grid-cols-2 justify-items-center">
+                <div class="text-center mr-5">
+                  <img src="assets/images/portfolio/team/nahomi_mendoza.webp">
+                </div>
+                <div class="grid align-middle">
+                  <div class="block max-h-fit">
+                    <div class="font-semibold text-xl h-fit">Brenda Nahomi Mendoza Artigas</div>
+                    <div class="text-md italic font-light h-fit">Licenciatura en enfermería y obstetricia, ENEO-UNAM</div>
+                    <div class="text-md font-semibold h-fit">23 años</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="bg-gray-300 md:max-h-24 py-8">
+          <div>Todos los derechos reservados. 2022</div>
         </div>
       </section>
 </body>
