@@ -44,7 +44,7 @@ $(document).ready(function(){
                         $('#success').empty();
                     });
                     //clear all fields
-                    $("#contactForm").trigger("reset");
+                    $("#contact-form").trigger("reset");
                 },
                 error: function () {
                     // Fail message
@@ -67,7 +67,7 @@ $(document).ready(function(){
                         $('#success').empty();
                     });
                     //clear all fields
-                    $("#contactForm").trigger("reset");
+                    $("#contact-form").trigger("reset");
                 },
                 complete: function () {
                     setTimeout(function () {
@@ -90,24 +90,24 @@ $(document).ready(function(){
             {
                 if(name=="")
                 {
-                    if($("#contactForm #name-contact-div").after)
-                        $("#contactForm #name-contact-div").next('span').remove();
+                    if($("#contact-form #nombre-contact-div").after)
+                        $("#contact-form #nombre-contact-div").next('span').remove();
                     
-                    $("#contactForm #name").addClass('required-field');
-                    $("#contactForm #name").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
-                    $("#contactForm #name-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce tu nombre.</span>');
+                    $("#contact-form #nombre").addClass('required-field');
+                    $("#contact-form #nombre").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
+                    $("#contact-form #nombre-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce tu nombre.</span>');
                     return false;
                 }
                 else
                 {
                     if(!characterRegName.test(name))
                     {
-                        if($("#contactForm #name-contact-div").after)
-                            $("#contactForm #name-contact-div").next('span').remove();
+                        if($("#contact-form #nombre-contact-div").after)
+                            $("#contact-form #nombre-contact-div").next('span').remove();
 
-                        $("input#name").addClass('required-field');
-                        $("input#name").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
-                        $("#contactForm #name-contact-div").after('<span class="text-red-600">Los caracteres especiales no están permitidos. Por favor, introduce un nombre válido</span>');
+                        $("input#nombre").addClass('required-field');
+                        $("input#nombre").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
+                        $("#contact-form #nombre-contact-div").after('<span class="text-red-600">Los caracteres especiales no están permitidos. Por favor, introduce un nombre válido</span>');
                         return false;
                     }
                     else
@@ -118,24 +118,24 @@ $(document).ready(function(){
             {
                 if(email=="")
                 {
-                    if($("#contactForm #email-contact-div").after)
-                        $("#contactForm #email-contact-div").next('span').remove();
+                    if($("#contact-form #correo-contact-div").after)
+                        $("#contact-form #correo-contact-div").next('span').remove();
                     
-                    $("#contactForm #email").addClass('required-field');
-                    $("#contactForm #email").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
-                    $("#contactForm #email-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce un e-mail.</span>');
+                    $("#contact-form #correo").addClass('required-field');
+                    $("#contact-form #correo").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
+                    $("#contact-form #correo-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce un e-mail.</span>');
                     return false;
                 }
                 else
                 {
                     if(!emailRegEmail.test(email))
                     {
-                        if($("contactForm #email-contact-div").after)
-                            $("contactForm #email-contact-div").next('span').remove();
+                        if($("contact-form #correo-contact-div").after)
+                            $("contact-form #correo-contact-div").next('span').remove();
 
-                        $("input#mail").addClass('required-field');
-                        $("input#mail").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
-                        $("contactForm #email-contact-div").after('<span class="text-red-600">Formato de E-mail no válido. Por favor, introduce una dirección de correo válida.</span>');
+                        $("input#correo").addClass('required-field');
+                        $("input#correo").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
+                        $("contact-form #correo-contact-div").after('<span class="text-red-600">Formato de E-mail no válido. Por favor, introduce una dirección de correo válida.</span>');
                         return false;
                     }
                     else
@@ -146,12 +146,12 @@ $(document).ready(function(){
             {
                 if(phone=="")
                 {
-                    if($("#contactForm #phone-contact-div").after)
-                        $("#contactForm #phone-contact-div").next('span').remove();
+                    if($("#contact-form #telefono-contact-div").after)
+                        $("#contact-form #telefono-contact-div").next('span').remove();
                     
-                    $("#contactForm #phone").addClass('required-field');
-                    $("#contactForm #phone").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
-                    $("#contactForm #phone-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce un número telefónico.</span>');
+                    $("#contact-form #telefono").addClass('required-field');
+                    $("#contact-form #telefono").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
+                    $("#contact-form #telefono-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce un número telefónico.</span>');
                     return false;
                 }
                 else
@@ -161,9 +161,9 @@ $(document).ready(function(){
                         if($("phone-contact-div").after)
                             $("phone-contact-div").next('span').remove();
 
-                        $("input#phone").addClass('required-field');
-                        $("input#phone").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
-                        $("phone-contact-div").after('<span class="text-red-600">Formato de número telefónico no válido. Por favor, introduce un número válido.</span>');
+                        $("input#telefono").addClass('required-field');
+                        $("input#telefono").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
+                        $("contact-form #telefono-contact-div").after('<span class="text-red-600">Formato de número telefónico no válido. Por favor, introduce un número válido.</span>');
                         return false;
                     }
                     else
@@ -174,12 +174,12 @@ $(document).ready(function(){
             {
                 if(message=='')
                 {
-                    if($("#contactForm #message-contact-div").after)
-                        $("#contactForm #message-contact-div").next('span').remove();
+                    if($("#contact-form #mensaje-contact-div").after)
+                        $("#contact-form #mensaje-contact-div").next('span').remove();
                     
-                    $("#contactForm #message").addClass('required-field');
-                    $("#contactForm #message").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
-                    $("#contactForm #message-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce un mensaje.</span>');
+                    $("#contact-form #mensaje").addClass('required-field');
+                    $("#contact-form #mensaje").css({"background-color":"rgb(255,177,177)","border-color":"#FF0000","border-width":"1px"});
+                    $("#contact-form #mensaje-contact-div").after('<span class="text-red-600" id="alert-message">Por favor, introduce un mensaje.</span>');
                     return false;
                 }
                 else
@@ -193,7 +193,7 @@ $(document).ready(function(){
                 return false;
         }
     });
-    $("#contactForm input").focus(function (event) {
+    $("#contact-form input").focus(function (event) {
         if($(this).hasClass('required-field'))
         {
             $(this).removeAttr('style');
@@ -201,7 +201,7 @@ $(document).ready(function(){
             $(this).removeClass('required-field');
         }
     });
-    $("#contactForm textarea").focus(function (event) {
+    $("#contact-form textarea").focus(function (event) {
         if($(this).hasClass('required-field'))
         {
             $(this).removeAttr('style');
@@ -212,6 +212,6 @@ $(document).ready(function(){
 });
 
 /*When clicking on Full hide fail/success boxes */
-$("#name").focus(function () {
+$("#nombre").focus(function () {
     $("#success").html("");
 });

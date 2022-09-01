@@ -22978,6 +22978,10 @@ textarea.form-control.is-invalid{
   background-image: url('../assets/images/portfolio/wpp_main.webp');
 }
 
+.bg-wppsite{
+  background-image: url('../assets/images/portfolio/wppsite.webp');
+}
+
 .from-transparent{
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -53948,6 +53952,10 @@ textarea.form-control.is-invalid{
     background-image: url('../assets/images/portfolio/wpp_main.webp');
   }
 
+  .sm\:bg-wppsite{
+    background-image: url('../assets/images/portfolio/wppsite.webp');
+  }
+
   .sm\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -84556,6 +84564,10 @@ textarea.form-control.is-invalid{
 
   .md\:bg-headerbg{
     background-image: url('../assets/images/portfolio/wpp_main.webp');
+  }
+
+  .md\:bg-wppsite{
+    background-image: url('../assets/images/portfolio/wppsite.webp');
   }
 
   .md\:from-transparent{
@@ -115168,6 +115180,10 @@ textarea.form-control.is-invalid{
     background-image: url('../assets/images/portfolio/wpp_main.webp');
   }
 
+  .lg\:bg-wppsite{
+    background-image: url('../assets/images/portfolio/wppsite.webp');
+  }
+
   .lg\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -145778,6 +145794,10 @@ textarea.form-control.is-invalid{
     background-image: url('../assets/images/portfolio/wpp_main.webp');
   }
 
+  .xl\:bg-wppsite{
+    background-image: url('../assets/images/portfolio/wppsite.webp');
+  }
+
   .xl\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -176386,6 +176406,10 @@ textarea.form-control.is-invalid{
 
   .\32xl\:bg-headerbg{
     background-image: url('../assets/images/portfolio/wpp_main.webp');
+  }
+
+  .\32xl\:bg-wppsite{
+    background-image: url('../assets/images/portfolio/wppsite.webp');
   }
 
   .\32xl\:from-transparent{
