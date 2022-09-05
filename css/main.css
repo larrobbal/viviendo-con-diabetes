@@ -11407,6 +11407,10 @@ textarea.form-control.is-invalid{
   height: 24rem;
 }
 
+.h-128{
+  height: 40rem;
+}
+
 .h-auto{
   height: auto;
 }
@@ -11777,6 +11781,10 @@ textarea.form-control.is-invalid{
 
 .w-96{
   width: 24rem;
+}
+
+.w-128{
+  width: 40rem;
 }
 
 .w-auto{
@@ -42447,6 +42455,10 @@ textarea.form-control.is-invalid{
     height: 24rem;
   }
 
+  .sm\:h-128{
+    height: 40rem;
+  }
+
   .sm\:h-auto{
     height: auto;
   }
@@ -42817,6 +42829,10 @@ textarea.form-control.is-invalid{
 
   .sm\:w-96{
     width: 24rem;
+  }
+
+  .sm\:w-128{
+    width: 40rem;
   }
 
   .sm\:w-auto{
@@ -73061,6 +73077,10 @@ textarea.form-control.is-invalid{
     height: 24rem;
   }
 
+  .md\:h-128{
+    height: 40rem;
+  }
+
   .md\:h-auto{
     height: auto;
   }
@@ -73431,6 +73451,10 @@ textarea.form-control.is-invalid{
 
   .md\:w-96{
     width: 24rem;
+  }
+
+  .md\:w-128{
+    width: 40rem;
   }
 
   .md\:w-auto{
@@ -103675,6 +103699,10 @@ textarea.form-control.is-invalid{
     height: 24rem;
   }
 
+  .lg\:h-128{
+    height: 40rem;
+  }
+
   .lg\:h-auto{
     height: auto;
   }
@@ -104045,6 +104073,10 @@ textarea.form-control.is-invalid{
 
   .lg\:w-96{
     width: 24rem;
+  }
+
+  .lg\:w-128{
+    width: 40rem;
   }
 
   .lg\:w-auto{
@@ -134289,6 +134321,10 @@ textarea.form-control.is-invalid{
     height: 24rem;
   }
 
+  .xl\:h-128{
+    height: 40rem;
+  }
+
   .xl\:h-auto{
     height: auto;
   }
@@ -134659,6 +134695,10 @@ textarea.form-control.is-invalid{
 
   .xl\:w-96{
     width: 24rem;
+  }
+
+  .xl\:w-128{
+    width: 40rem;
   }
 
   .xl\:w-auto{
@@ -164903,6 +164943,10 @@ textarea.form-control.is-invalid{
     height: 24rem;
   }
 
+  .\32xl\:h-128{
+    height: 40rem;
+  }
+
   .\32xl\:h-auto{
     height: auto;
   }
@@ -165273,6 +165317,10 @@ textarea.form-control.is-invalid{
 
   .\32xl\:w-96{
     width: 24rem;
+  }
+
+  .\32xl\:w-128{
+    width: 40rem;
   }
 
   .\32xl\:w-auto{
