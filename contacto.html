@@ -59,21 +59,37 @@
           </div>
         </div>
       </nav>
-      <section class="">
+      <section id="contact">
         <div class="grid justify-items-center bg-gray-50 bg-wppsite bg-repeat">
           <div class="md:grid justify-items-center my-10 w-full max-w-screen-2xl text-2xl px-5">
             <div class="block w-full max-w-screen-xl">
               <div class="text-center">Puedes ponerte en contacto con nosotros por este medio, o bien en nuestras redes sociales.</div>
               <div class="grid grid-cols-1 md:grid-cols-6 md:my-5">
-                <div class="md:col-span-4 md:border-r-2 md:border-r-black">
-                  <form id="contact-form" class="block w-full" name="sentMessage" novalidate="novalidate">
-                    <div id="nombre-contact-div"><input type="text" name="nombre" id="nombre" class="w-full md:w-3/4 my-2 py-1 px-3 rounded-md shadow-md font-light focus:border-solid" placeholder="Nombre"></div>
-                    <div id="telefono-contact-div"><input type="text" name="telefono" id="telefono" class="w-full md:w-3/4 my-2 py-1 px-3 rounded-md shadow-md font-light focus:border-solid" placeholder="Teléfono (10 dígitos)"></div>
-                    <div id="correo-contact-div"><input type="text" name="correo" id="correo" class="w-full md:w-3/4 my-2 py-1 px-3 rounded-md shadow-md font-light focus:border-solid" placeholder="Correo Electrónico (Ej: example@mail.com)"></div>
-                    <div id="mensaje-contact-div"><textarea name="mensaje" id="mensaje" cols="30" rows="10" class="w-full md:w-3/4 my-2 py-1 px-3 rounded-md shadow-md font-light focus:border-solid" placeholder="Inserte aquí su mensaje"></textarea></div>
-                    <div id="success"></div>
-                    <button id="sendMessageButton" class="px-5 py-2 bg-white rounded-md cursor-pointer hover:bg-colormain hover:shadow-md" type="submit">Enviar</button>  
-                  </form>
+                <div class="md:col-span-4 container text-center mx-auto mt-7 px-5 bg-cover bg-no-repeat bg-center border-b border-b-4 border-b-gray-500 md:border-b-0 md:border-r md:border-r-4 md:border-r-gray-500">
+                  <div class="items-center text-center justify-center content-center object-center">
+                    <form class="px-5 py-5" id="contactForm" name="sentMessage" novalidate="novalidate">
+                      <div class="grid md:mb-6">
+                        <div class="block -mx-6 md:h-full">
+                          <div class="block justify-between h-auto w-full my-4 px-3 mb-6 md:mb-0" id="name-contact-div">
+                            <input class="appearance-none h-full block bg-gray-200 text-gray-700 font-extrabold border border-gray-500 rounded-lg w-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="Nombre*" required>
+                          </div>
+                          <div class="block justify-between h-auto w-full my-4 px-3 mb-6 md:mb-0" id="email-contact-div">
+                            <input class="appearance-none h-full block bg-gray-200 text-gray-700 font-extrabold border border-gray-500 rounded-lg w-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" type="text" placeholder="Correo Electrónico*" required>
+                          </div>
+                          <div class="block justify-between h-auto w-full my-4 px-3 mb-6 md:mb-0" id="phone-contact-div">
+                            <input class="appearance-none h-full block bg-gray-200 text-gray-700 font-extrabold border border-gray-500 rounded-lg w-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" maxlength="10" id="phone" type="text" placeholder="Teléfono*" required>
+                          </div>
+                          <div class="flex justify-between md:w-full md:mb-0" id="message-contact-div">
+                            <textarea rows="10" class="appearance-none block bg-gray-200 text-gray-700 font-extrabold border border-gray-500 rounded-lg w-full md:h-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white resize-none" id="message" placeholder="Introduce aquí tu mensaje" required></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div id="success"></div>
+                        <button class="bg-white px-5 py-3 rounded-lg text-black uppercase font-extrabold font-montserrat text-2xl transition shadow-lg hover:bg-colormain hover:text-white duration-200 ease-in-out disabled:bg-gray-300" id="sendMessageButton" type="submit">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
                 <div class="md:col-span-2 block">
                   <div class="flex px-5 my-5 justify-items-center">
@@ -99,6 +115,7 @@
           </div>
         </div>
       </section>
+      <script src="assets/mail/contact_me.js"></script>
     </body>
     <script src="assets/js/scripts.js"></script>
 </html>
